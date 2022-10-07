@@ -70,7 +70,7 @@ document.addEventListener('scroll', (event) => {
 });
 
 setInterval(()=>{
-  document.getElementById("xy").innerText = `X: ${finalX} Y:${finalY}`
+  document.getElementById("xy").innerText = `X: ${Math.round(finalX)} Y:${Math.round(finalY)}`
 },1)
 document.addEventListener('keydown', (event) => {
   if (event.key == "n" && showTempNote == false && tempText != document.activeElement) {
