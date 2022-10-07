@@ -1,0 +1,55 @@
+html, body {
+  height: 1000000px;
+  width: 1000000px;
+  
+  /*background-image: url("https://st2.depositphotos.com/1017994/7073/i/950/depositphotos_70732059-stock-photo-brick-wall-seamless-texture.jpg");*/
+  /*background-image: url("https://www.tilingtextures.com/wp-content/uploads/2018/12/0074-512x512.jpg") ;*/
+  background-image: url("corkboard.jpg");
+  background-size: 400px;
+  padding: 0px;
+}
+body {
+  border: solid brown 20px;
+  border-image: url("frame.jpg") 50;
+  border-image-repeat: repeat;
+  border-image-outset: 10px;
+  border-image-width: 40px;
+  max-width: 1000%;
+  max-height: 1000%;
+}
+textarea {
+  transform: rotate(4deg);
+  margin-top: 80px;
+  margin-left: 130px;
+  color: #000000;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  opacity: 0.9;
+  width: 200px;
+  height: 200px;
+  overflow: scroll;
+  resize: none;
+  background-color: transparent;
+  border: transparent;
+}
+#tips {
+  position: fixed;
+  z-index: 100;
+}
+#xy {
+  position: fixed;
+  top: 70px;
+  z-index: 100;
+}
+div {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: url("stickynote.png");
+  background-size: cover;
+  opacity: 1;
+  overflow: hidden;
+  
+}
+textarea::-webkit-scrollbar {
+  display: none;
+}
